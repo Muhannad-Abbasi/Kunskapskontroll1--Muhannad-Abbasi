@@ -1,6 +1,6 @@
 # Kunskapskontroll1--Muhannad-Abbasi
 
-A simple webpage that has some simple functions, for example:
+A simple webpage that contains some simple functions, for example:
 
 1 - When you click on the "buy" button under the black hoodie, it will change the button color from gray to red plus it will remove the Social media's list from the page.
 

@@ -1,10 +1,10 @@
-// 1 - A - Reset Button -- En knapp som återställer allt till originalutseendet
+// 1 - (A) - Reset Button -- En knapp som återställer allt till originalutseendet
 
 let navElement = document.querySelectorAll('a');
 let homeReset = navElement[0];
 homeReset.innerText = 'Reset';
 
-// 1 - B - Alla ändringar som du har gjort ska ändras tillbaka
+// 1 - (B) - Alla ändringar som du har gjort ska ändras tillbaka
 
 // Create an EventListener which call fanction resetAll() when we click on the "Reset" button on the top right of the page
 
@@ -99,7 +99,6 @@ function thirdChange(){
 /* 7 - Lägg till en lista var som helst i DOMen (måste tas bort med resetknappen)
 Listan ska innehålla flera li element
 Varje li element ska ha en synlig border. (Valfritt utseende) */
-
 
 let sectionElement = document.querySelector('section');
 

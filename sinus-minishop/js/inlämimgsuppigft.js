@@ -96,44 +96,44 @@ function thirdChange(){
     articleElement[5].style.display = 'none';
 }
 
-// 7 - Lägg till en lista var som helst i DOMen (måste tas bort med resetknappen)
-    // Listan ska innehålla flera li element
-    // Varje li element ska ha en synlig border. (Valfritt utseende)
+/* 7 - Lägg till en lista var som helst i DOMen (måste tas bort med resetknappen)
+Listan ska innehålla flera li element
+Varje li element ska ha en synlig border. (Valfritt utseende) */
 
 
-    let sectionElement = document.querySelector('section');
+let sectionElement = document.querySelector('section');
 
 // 1 - Create an unordered list and add it to element section
 
-    let newUl = document.createElement('ul');
-    sectionElement.appendChild(newUl);
+let newUl = document.createElement('ul');
+sectionElement.appendChild(newUl);
 
 // 2 - Create five list item using for loop and add them into UI element which we've created previously
 
-    for( i = 0; i < 5; i++){
-        let newLi = document.createElement('li');
-        newUl.appendChild(newLi)
-    }
+for( i = 0; i < 5; i++){
+    let newLi = document.createElement('li');
+    newUl.appendChild(newLi)
+}
 
 // 3 - Create an array to put the text inside the list item using for loop
 
-    let liArr = ['Google', 'YouTube', 'Snapchat', 'Linkedln', 'Potato'];
+let liArr = ['Google', 'YouTube', 'Snapchat', 'Linkedln', 'Potato'];
 
-    let liElements = document.querySelectorAll('li');
+let liElements = document.querySelectorAll('li');
 
-    for(i = 0; i < liArr.length; i++){
-        liElements[i].innerText = liArr[i];
-    }
+for(i = 0; i < liArr.length; i++){
+    liElements[i].innerText = liArr[i];
+}
 
 // 4 - Decorate list item using style.border & style.listStyle into for loop
 
-    let hue = 0;
-    let hueStep = 360/liElements.length;
+let hue = 0;
+let hueStep = 360/liElements.length;
 
-    for( i = 0; i < liElements.length; i++){
+for( i = 0; i < liElements.length; i++){
 
-        hue += hueStep
+    hue += hueStep
 
-        liElements[i].style.border = `3px solid hsl(${hue}, 70%, 80%)`;
-        liElements[i].style.listStyle = 'none';
-    }
+    liElements[i].style.border = `3px solid hsl(${hue}, 70%, 80%)`;
+    liElements[i].style.listStyle = 'none';
+}
